@@ -1,0 +1,558 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "TEST1"
+		}
+	],
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"include",
+			"target_link_libraries",
+			"add_compile_options",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"C:/Users/benji/LabBoard_BNJ/Applications/sys/cmake/stm32f303.cmake",
+			"C:/Users/benji/LabBoard_BNJ/Applications/sys/cmake/coroLabs.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 2,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 50,
+				"parent" : 2
+			},
+			{
+				"file" : 0,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 50,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 11,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 32,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 39,
+				"parent" : 4
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-O0 -Wno-deprecated -DDEBUG"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-mthumb"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-mcpu=cortex-m4"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-mfloat-abi=soft"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-DSTM32F303x8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-DARMCM4"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-std=c++11"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fms-extensions"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fno-exceptions"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fno-rtti"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fno-use-cxa-atexit"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fno-threadsafe-statics"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fstrict-volatile-bitfields"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wcast-align"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wshadow"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wlogical-op"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wsuggest-final-types"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wsuggest-final-methods"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fexceptions"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-g"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/arduinoCore"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-ST7735-Library"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library/Fonts"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Device/ST/STM32F3xx/Include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-O0 -Wno-deprecated -DDEBUG"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-mthumb"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-mcpu=cortex-m4"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-mfloat-abi=soft"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-DSTM32F303x8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-DARMCM4"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-std=c11"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fstrict-volatile-bitfields"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wcast-align"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wshadow"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wlogical-op"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wsuggest-final-types"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wsuggest-final-methods"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fexceptions"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-g"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/arduinoCore"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-ST7735-Library"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library/Fonts"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Device/ST/STM32F3xx/Include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				11,
+				12
+			]
+		}
+	],
+	"id" : "TEST1::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-O0 -Wno-deprecated -DDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-mthumb",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-mcpu=cortex-m4",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-mfloat-abi=soft",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-DSTM32F303x8",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-DARMCM4",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-TC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/stm32f303K8.ld",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-Wl,--start-group",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lm",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-Wl,--end-group",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-Wl,--gc-sections",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-Lsys",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lstdc++_nano",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-Xlinker",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-Map=TEST1.map",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lm",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "TEST1",
+	"nameOnDisk" : "TEST1",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/benji/LabBoard_BNJ/Applications/lib/adc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/benji/LabBoard_BNJ/Applications/lib/pinAccess.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/benji/LabBoard_BNJ/Applications/lib/spi.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/benji/LabBoard_BNJ/Applications/lib/exti.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/benji/LabBoard_BNJ/Applications/lib/tft/tft.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/benji/LabBoard_BNJ/Applications/lib/tft/arduinoCore/Print.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-GFX-Library/Adafruit_GFX.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-GFX-Library/Adafruit_SPITFT.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-ST7735-Library/Adafruit_ST7735.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-ST7735-Library/Adafruit_ST77xx.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/benji/LabBoard_BNJ/Applications/sys/startup_ARMCM4.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/benji/LabBoard_BNJ/Applications/sys/startup_clock.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

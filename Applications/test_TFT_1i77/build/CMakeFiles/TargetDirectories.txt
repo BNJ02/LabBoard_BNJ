@@ -1,0 +1,7 @@
+C:/Users/benji/LabBoard_BNJ/Applications/test_TFT_1i77/build/CMakeFiles/TEST1.dir
+C:/Users/benji/LabBoard_BNJ/Applications/test_TFT_1i77/build/CMakeFiles/bin.dir
+C:/Users/benji/LabBoard_BNJ/Applications/test_TFT_1i77/build/CMakeFiles/flash.dir
+C:/Users/benji/LabBoard_BNJ/Applications/test_TFT_1i77/build/CMakeFiles/qemu-run.dir
+C:/Users/benji/LabBoard_BNJ/Applications/test_TFT_1i77/build/CMakeFiles/qemu-gdb.dir
+C:/Users/benji/LabBoard_BNJ/Applications/test_TFT_1i77/build/CMakeFiles/edit_cache.dir
+C:/Users/benji/LabBoard_BNJ/Applications/test_TFT_1i77/build/CMakeFiles/rebuild_cache.dir
