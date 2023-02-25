@@ -6,26 +6,13 @@
  extern "C" {
 #endif /* __cplusplus */
 
-//start spi master mode 0 with 8 bits transactions
-// CS  : PA11 (I/O) - Arduino D10
-// MOSI: PB5 (AF5)  - Arduino D11
-// MISO: PB4 (AF5)  - Arduino D12
-// SCK : PB3 (AF5)  - Arduino D13
-//
 void setupI2C();
 
-//start a transaction (lowering CS)
-void beginTransaction();
+void startI2C(uint8_t slave_address, bool RW, uint8_t nb_bytes);
 
-//ends a transaction (raising CS)
-void endTransaction();
+void writeI2C(uint8_t slave_address, uint8_t data, uint8_t nb_bytes = 1);
 
-//low speed transfer: both writing and reading
-uint8_t transfer8(uint8_t val);
-
-//higher speed write transfer (than transfer8)
-// * check that TX fifo is not full and send data
-void write8(uint8_t val);
+uint8_t readI2C(uint8_t slave_address, uint8_t nb_bytes = 1);
 
 #ifdef __cplusplus
 }

@@ -2,6 +2,8 @@
 #include "Adafruit_GFX.h"
 #include "Adafruit_ST7735.h"
 #include "tft.h"
+#include "i2c.h"
+#include "spi.h"
 
 /** affichage d'une valeur 
  *  au format virgule fixe 10.6
@@ -17,8 +19,6 @@ void setup() {
 }
 
 int main(void) {
-
-    volatile int temps;
     setup();
 
     Tft.setTextCursor(5,0);
