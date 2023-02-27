@@ -5,35 +5,40 @@
 #include "i2c.h"
 #include "spi.h"
 
-/** affichage d'une valeur 
- *  au format virgule fixe 10.6
- */
-void affVF10_6(int16_t val)
-{
-	//seul endroit avec des 'float' car c'est du debug!!
-	Tft.print(((float)(val))/64);
-}
-
 void setup() {
     Tft.setup();
     setupI2C();
+    //initI2C();
+    //Tft.setup();
 }
 
 int main(void) {
     setup();
 
-    Tft.setTextCursor(5,0);
-    Tft.print("Coucou Leila !");
+    //Tft.setTextCursor(5,0);
+    //Tft.print("Hello world !");
+
+    I2C1->CR2     &= ~(I2C_CR2_SADD);
+    I2C1->CR2     |=  (0x00 << I2C_CR2_SADD_Pos);
+
+    // Write two bytes; the register offset, and its value.
+    I2C1->CR2 &= ~(I2C_CR2_NBYTES);
+    I2C1->CR2 |=  (0x01 << I2C_CR2_NBYTES_Pos);
+
+    //I2C1->CR1 |= 0x000000FF;
+
+    //writeI2C(0x20, 0x01, 1);
+
+    Tft.setTextCursor(5,1);
+    Tft.print(I2C1->CR2);
+
+    Tft.setTextCursor(5,2);
+    Tft.print(I2C1->CR1);
 
     /* Infinite loop */
-    while (1) {
-        writeI2C(0x00, 0x00, 1);
-        writeI2C(0x00, 0x01, 1);
-
-        for(volatile int64_t i; i<100000000; i++);
-
-        writeI2C(0x00, 0x09, 1);
-        writeI2C(0x00, 0x01, 1);
+    while (1) 
+    {
+        writeI2C(0x20, 0x01, 1);
     }
 }
 

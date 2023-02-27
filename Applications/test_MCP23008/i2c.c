@@ -1,6 +1,10 @@
 #include "i2c.h"
 #include "stm32f3xx.h"
 
+#define SCL_PIN (6)
+#define SDA_PIN (7)
+#define LED_PIN (3)
+
 // use I2C:
 // SCL : PB6
 // SDA : PB7
@@ -19,7 +23,7 @@ void setupI2C() {
     4/ Program the peripheral input clock in I2C_CR2 Register in order to generate correct timings
     5/ Program the I2C_CR1 Register to enable the peripheral
     ***************************/
-
+    /*
     // 1 : Program the I2C_CR1 Register to enable the peripheral
     I2C1->CR1 &= ~(1 << I2C_CR1_PE_Pos); // Peripheral Disabled
 
@@ -28,10 +32,11 @@ void setupI2C() {
 
     // 3 : Configure NOSTRETCH in CR1 register
     I2C1->CR1 &= ~(1 << I2C_CR1_NOSTRETCH_Pos); // NOSTRETCH disabled in master mode
+    */
 
     // 1
-    // Enable the I2C Clock and GPIO Clock
-    RCC->APB1ENR |= (1<<21); // enable I2C clock (p.152 STM32F303RM)
+    // Enable the I2C1 peripheral in 'RCC_APB1ENR' and GPIO Clock
+    RCC->APB1ENR |= RCC_APB1ENR_I2C1EN; // enable I2C clock (p.152 STM32F303RM)
     __asm__("nop");          // wait until I2C clock is OK
     // reset peripheral (mandatory!)
     RCC->APB1RSTR |= RCC_APB1RSTR_I2C1RST;
@@ -136,4 +141,128 @@ uint8_t readI2C(uint8_t slave_address, uint8_t nb_bytes)
     return data;
 }
 
+void initI2C() {
+    // Enable the I2C1 peripheral in 'RCC_APB1ENR'.
+  RCC->APB1ENR |= RCC_APB1ENR_I2C1EN;
+  #ifdef VVC_F0
+    // Enable the GPIOB peripheral in 'RCC_AHBENR'.
+    RCC->AHBENR   |= RCC_AHBENR_GPIOBEN;
+  #elif  VVC_L0
+    RCC->IOPENR   |= RCC_IOPENR_IOPBEN;
+  #endif
+  // Initialize the GPIOB pins.
+  // For I2C1, use AF1.
+  GPIOB->AFR[SCL_PIN/8] &= ~(0xF << (SCL_PIN*4));
+  GPIOB->AFR[SCL_PIN/8] |=  (0x1 << (SCL_PIN*4));
+  GPIOB->AFR[SDA_PIN/8] &= ~(0xF << (SDA_PIN*4));
+  GPIOB->AFR[SDA_PIN/8] |=  (0x1 << (SDA_PIN*4));
+  // B6/7 should be set to 'alt' mode, open-drain, with pull-up.
+  GPIOB->MODER  &= ~(0x3 << (SCL_PIN*2));
+  GPIOB->MODER  |=  (0x2 << (SCL_PIN*2));
+  GPIOB->PUPDR  &= ~(0x3 << (SCL_PIN*2));
+  GPIOB->PUPDR  |=  (0x1 << (SCL_PIN*2));
+  GPIOB->OTYPER |=  (0x1 << SCL_PIN);
+  GPIOB->MODER  &= ~(0x3 << (SDA_PIN*2));
+  GPIOB->MODER  |=  (0x2 << (SDA_PIN*2));
+  GPIOB->PUPDR  &= ~(0x3 << (SDA_PIN*2));
+  GPIOB->PUPDR  |=  (0x1 << (SDA_PIN*2));
+  GPIOB->OTYPER |=  (0x1 << SDA_PIN);
+  // B3 is connected to an LED on the 'Nucleo' board.
+  //    It should be set to push-pull low-speed output.
+  GPIOB->MODER  &= ~(0x3 << (LED_PIN*2));
+  GPIOB->MODER  |=  (0x1 << (LED_PIN*2));
+  GPIOB->OTYPER &= ~(1 << LED_PIN);
+  GPIOB->PUPDR  &= ~(0x3 << (LED_PIN*2));
 
+  // Initialize the I2C1 peripheral.
+  // First, disable the peripheral.
+  I2C1->CR1     &= ~(I2C_CR1_PE);
+  // Clear some 'CR1' bits.
+  I2C1->CR1     &= ~( I2C_CR1_DNF    |
+                      I2C_CR1_ANFOFF |
+                      I2C_CR1_SMBHEN |
+                      I2C_CR1_SMBDEN );
+  // Clear some 'CR2' bits.
+  I2C1->CR2     &= ~( I2C_CR2_RD_WRN  |
+                      I2C_CR2_NACK    |
+                      I2C_CR2_RELOAD  |
+                      I2C_CR2_AUTOEND );
+  // Clear all 'ICR' flags.
+  I2C1->ICR     |=  ( I2C_ICR_ADDRCF   |
+                      I2C_ICR_NACKCF   |
+                      I2C_ICR_STOPCF   |
+                      I2C_ICR_BERRCF   |
+                      I2C_ICR_ARLOCF   |
+                      I2C_ICR_OVRCF    |
+                      I2C_ICR_PECCF    |
+                      I2C_ICR_TIMOUTCF |
+                      I2C_ICR_ALERTCF  );
+  // Configure I2C timing.
+  // Reset all but the reserved bits.
+  I2C1->TIMINGR &=  (0x0F000000);
+  // (100KHz @48MHz core clock, according to an application note)
+  I2C1->TIMINGR |=  (0x10420F13);
+  // Enable the peripheral. (PE = 'Peripheral Enable')
+  I2C1->CR1     |=  (0x000000FF);
+  // Master mode
+  I2C1->CR2 |= I2C_CR2_AUTOEND;
+}
+
+inline void i2c_start(void) {
+  // Send 'Start' condition, and wait for acknowledge.
+  I2C1->CR2 |=  (I2C_CR2_START);
+  while ((I2C1->CR2 & I2C_CR2_START)) {}
+}
+
+void i2c_stop(void) {
+  // Send 'Stop' condition, and wait for acknowledge.
+  I2C1->CR2 |=  (I2C_CR2_STOP);
+  //while ((I2C1->CR2 & I2C_CR2_STOP)) {}
+  // Reset the ICR ('Interrupt Clear Register') event flag.
+  I2C1->ICR |=  (I2C_ICR_STOPCF);
+  while ((I2C1->ICR & I2C_ICR_STOPCF)) {}
+}
+
+void i2c_write_byte(uint8_t dat) {
+  I2C1->TXDR = (I2C1->TXDR & 0xFFFFFF00) | dat;
+  // Wait for one of these ISR bits:
+  // 'TXIS' ("ready for next byte")
+  // 'TC'   ("transfer complete")
+  while (!(I2C1->ISR & (I2C_ISR_TXIS | I2C_ISR_TC))) {}
+  // (Also of interest: 'TXE' ("TXDR register is empty") and
+  //  'TCR' ("transfer complete, and 'RELOAD' is set."))
+}
+
+uint8_t i2c_read_byte(void) {
+  // Wait for a byte of data to be available, then read it.
+  while (!(I2C1->ISR & I2C_ISR_RXNE)) {}
+  return (I2C1->RXDR & 0xFF);
+}
+
+uint8_t i2c_read_register(uint8_t reg_addr) {
+  // Set '1 byte to send.'
+  I2C1->CR2 &= ~(I2C_CR2_NBYTES);
+  I2C1->CR2 |=  (0x01 << I2C_CR2_NBYTES_Pos);
+  // Start the I2C write transmission.
+  i2c_start();
+  // Send the register address.
+  i2c_write_byte(reg_addr);
+  // Stop the I2C write transmission.
+  i2c_stop();
+  // Set '1 byte to receive.'
+  I2C1->CR2 &= ~(I2C_CR2_NBYTES);
+  I2C1->CR2 |=  (0x01 << I2C_CR2_NBYTES_Pos);
+  // Set 'read' I2C direction.
+  I2C1->CR2 |=  (I2C_CR2_RD_WRN);
+  // Start the I2C read transmission.
+  i2c_start();
+  // Read the transmitted data.
+  uint8_t read_result = i2c_read_byte();
+  // Stop the I2C read transmission.
+  i2c_stop();
+  // Set 'write' I2C direction again.
+  I2C1->CR2 &= ~(I2C_CR2_RD_WRN);
+
+  // Return the read value.
+  return read_result;
+}
