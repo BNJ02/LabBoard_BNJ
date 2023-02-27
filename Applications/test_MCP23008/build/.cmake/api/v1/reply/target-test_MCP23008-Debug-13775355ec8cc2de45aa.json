@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "TEST1"
+			"path" : "test_MCP23008"
 		}
 	],
 	"backtrace" : 5,
@@ -30,7 +30,7 @@
 			{
 				"command" : 1,
 				"file" : 2,
-				"line" : 25,
+				"line" : 26,
 				"parent" : 0
 			},
 			{
@@ -219,12 +219,12 @@
 			"sourceIndexes" : 
 			[
 				0,
-				5,
 				6,
 				7,
 				8,
 				9,
-				10
+				10,
+				11
 			]
 		},
 		{
@@ -348,12 +348,13 @@
 				2,
 				3,
 				4,
-				11,
-				12
+				5,
+				12,
+				13
 			]
 		}
 	],
-	"id" : "TEST1::@6890427a1f51a3e7e1df",
+	"id" : "test_MCP23008::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -433,7 +434,7 @@
 			},
 			{
 				"backtrace" : 6,
-				"fragment" : "-Map=TEST1.map",
+				"fragment" : "-Map=test_MCP23008.map",
 				"role" : "libraries"
 			},
 			{
@@ -444,8 +445,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "TEST1",
-	"nameOnDisk" : "TEST1",
+	"name" : "test_MCP23008",
+	"nameOnDisk" : "test_MCP23008",
 	"paths" : 
 	{
 		"build" : ".",
@@ -469,7 +470,8 @@
 				9,
 				10,
 				11,
-				12
+				12,
+				13
 			]
 		}
 	],
@@ -479,6 +481,12 @@
 			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"path" : "main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "i2c.c",
 			"sourceGroupIndex" : 0
 		},
 		{

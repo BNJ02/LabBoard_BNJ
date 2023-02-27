@@ -22,7 +22,7 @@
 			{
 				"command" : 1,
 				"file" : 3,
-				"line" : 25,
+				"line" : 26,
 				"parent" : 0
 			},
 			{
@@ -52,7 +52,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 12,
+				"line" : 22,
 				"parent" : 6
 			}
 		]
@@ -60,11 +60,11 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "TEST1::@6890427a1f51a3e7e1df"
+			"id" : "test_MCP23008::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "flash::@6890427a1f51a3e7e1df",
-	"name" : "flash",
+	"id" : "qemu-gdb::@6890427a1f51a3e7e1df",
+	"name" : "qemu-gdb",
 	"paths" : 
 	{
 		"build" : ".",
@@ -93,19 +93,19 @@
 		{
 			"backtrace" : 7,
 			"isGenerated" : true,
-			"path" : "build/CMakeFiles/flash",
+			"path" : "build/CMakeFiles/qemu-gdb",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/CMakeFiles/flash.rule",
+			"path" : "build/CMakeFiles/qemu-gdb.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/TEST1.bin.rule",
+			"path" : "build/test_MCP23008.bin.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

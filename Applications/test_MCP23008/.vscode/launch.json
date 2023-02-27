@@ -6,8 +6,8 @@
     "configurations": [
     {
         "cwd": "${workspaceFolder}",
-        "executable": "./build/TEST1",
-        "name": "Debug STM32 TEST1",
+        "executable": "./build/test_MCP23008",
+        "name": "Debug STM32 test_MCP23008",
         "request": "launch", //"launch" => reload firmware, "attach" => just start debug session
         "type": "cortex-debug",
         "showDevDebugOutput": "none",

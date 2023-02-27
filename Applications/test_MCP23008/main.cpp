@@ -16,6 +16,7 @@ void affVF10_6(int16_t val)
 
 void setup() {
     Tft.setup();
+    setupI2C();
 }
 
 int main(void) {
@@ -26,7 +27,13 @@ int main(void) {
 
     /* Infinite loop */
     while (1) {
+        writeI2C(0x00, 0x00, 1);
+        writeI2C(0x00, 0x01, 1);
 
+        for(volatile int64_t i; i<100000000; i++);
+
+        writeI2C(0x00, 0x09, 1);
+        writeI2C(0x00, 0x01, 1);
     }
 }
 

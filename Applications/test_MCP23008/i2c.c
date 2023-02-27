@@ -59,7 +59,7 @@ void setupI2C() {
 
     // e) Configure the Alternate Function (AF) in AFR Register
     GPIOB->AFR[0] |= 4 << GPIO_AFRL_AFRL6_Pos |   // alternate func AF4 for I2C
-                     4 << GPIO_AFRL_AFRL7_Pos |   // in datasheet Physical
+                     4 << GPIO_AFRL_AFRL7_Pos;    // in datasheet Physical
 
     // 3 : Reset the I2C
     I2C1->CR1 |= 1 << I2C_CR1_SWRST_Pos;
@@ -80,7 +80,7 @@ void setupI2C() {
     NVIC_EnableIRQ(I2C1_ER_IRQn);
 }
 
-void startI2C(uint8_t slave_address, bool RW, uint8_t nb_bytes)
+void startI2C(uint8_t slave_address, uint8_t RW, uint8_t nb_bytes)
 {
     /***** STEP FOLLOWED *****
     1/ Send the START condition
@@ -93,7 +93,7 @@ void startI2C(uint8_t slave_address, bool RW, uint8_t nb_bytes)
     I2C1->CR2 &= ~(slave_address << I2C_CR2_SADD_Pos);
 
     // Read or Write
-    RW ? I2C1->CR2 |= 1 << I2C_CR2_RD_WRN_Pos : I2C1->CR2 &= ~(1 << I2C_CR2_RD_WRN_Pos);
+    RW ? (I2C1->CR2 |= 1 << I2C_CR2_RD_WRN_Pos) : (I2C1->CR2 &= ~(1 << I2C_CR2_RD_WRN_Pos));
 
     // Number of bytes to be transmitted or to be received
     I2C1->CR2 |= nb_bytes << I2C_CR2_NBYTES_Pos;
@@ -103,31 +103,31 @@ void startI2C(uint8_t slave_address, bool RW, uint8_t nb_bytes)
     I2C1->CR2 |= 1 << I2C_CR2_AUTOEND_Pos; // enabled
 
     // Start
-    I2C->CR2 |= 1 << I2C_CR2_START_Pos;
+    I2C1->CR2 |= 1 << I2C_CR2_START_Pos;
 }
 
-void writeI2C(uint8_t slave_address, uint8_t data, uint8_t nb_bytes = 1)
+void writeI2C(uint8_t slave_address, uint8_t data, uint8_t nb_bytes)
 {
-    startI2C(slave_address, false, nb_bytes);
+    startI2C(slave_address, 0, nb_bytes);
 
-    for(nb_bytes; nb_bytes != 0; nb_bytes--)
+    //while((I2C1->ISR & (1 << I2C_ISR_TXIS_Pos)) == 0);
+
+    for(nb_bytes; nb_bytes > 0; nb_bytes--)
     {
-        while((I2C1->ISR | I2C_ISR_TXIS_Pos) == 0);
-
         I2C1->TXDR |= data << I2C_TXDR_TXDATA_Pos;
         I2C1->TXDR &= ~(data << I2C_TXDR_TXDATA_Pos);
     }
 }
 
-uint8_t readI2C(uint8_t slave_address, uint8_t nb_bytes = 1)
+uint8_t readI2C(uint8_t slave_address, uint8_t nb_bytes)
 {
     uint8_t data = 0;
 
-    startI2C(slave_address, false, nb_bytes);
+    startI2C(slave_address, 0, nb_bytes);
 
-    for(nb_bytes; nb_bytes != 0; nb_bytes--)
+    for(uint8_t i = nb_bytes; i > 0; i--)
     {
-        while((I2C1->ISR | I2C_ISR_RXNE_Pos) == 0);
+        while((I2C1->ISR & (1 << I2C_ISR_TXIS_Pos)) == 0);
 
         I2C1->RXDR |= data << I2C_TXDR_TXDATA_Pos;
         data |= (I2C1->RXDR | (0xFF << I2C_TXDR_TXDATA_Pos)) >> I2C_TXDR_TXDATA_Pos;
@@ -135,3 +135,5 @@ uint8_t readI2C(uint8_t slave_address, uint8_t nb_bytes = 1)
 
     return data;
 }
+
+

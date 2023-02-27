@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: TEST1
+# Project: test_MCP23008
 # Configurations: Debug
 # =============================================================================
 # =============================================================================
@@ -14,7 +14,7 @@
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__TEST1_Debug
+rule C_COMPILER__test_MCP23008_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = C:\PROGRA~2\ARMGNU~1\1213FB~1.2MP\bin\AR19DD~1.EXE $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule C_COMPILER__TEST1_Debug
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__TEST1_Debug
+rule CXX_COMPILER__test_MCP23008_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = C:\PROGRA~2\ARMGNU~1\1213FB~1.2MP\bin\AR10B2~1.EXE $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -34,7 +34,7 @@ rule CXX_COMPILER__TEST1_Debug
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__TEST1_Debug
+rule CXX_EXECUTABLE_LINKER__test_MCP23008_Debug
   command = cmd.exe /C "$PRE_LINK && C:\PROGRA~2\ARMGNU~1\1213FB~1.2MP\bin\AR10B2~1.EXE $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT

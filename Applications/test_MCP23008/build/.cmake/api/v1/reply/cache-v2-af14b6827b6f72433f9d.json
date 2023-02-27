@@ -831,7 +831,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "TEST1"
+			"value" : "test_MCP23008"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1100,42 +1100,6 @@
 			],
 			"type" : "BOOL",
 			"value" : "FALSE"
-		},
-		{
-			"name" : "TEST1_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/build"
-		},
-		{
-			"name" : "TEST1_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "TEST1_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008"
 		},
 		{
 			"name" : "WITH_TFT",

@@ -22,7 +22,7 @@
 			{
 				"command" : 1,
 				"file" : 3,
-				"line" : 25,
+				"line" : 26,
 				"parent" : 0
 			},
 			{
@@ -60,7 +60,7 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "TEST1::@6890427a1f51a3e7e1df"
+			"id" : "test_MCP23008::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "bin::@6890427a1f51a3e7e1df",
@@ -105,7 +105,7 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/TEST1.bin.rule",
+			"path" : "build/test_MCP23008.bin.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

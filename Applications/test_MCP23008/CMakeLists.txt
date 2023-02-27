@@ -14,11 +14,12 @@ include(${SYS_DIR}/cmake/arm-none-eabi.cmake)
 set(CMAKE_TRY_COMPILE_TARGET_TYPE "STATIC_LIBRARY")
 
 #project name
-project(TEST1)
+project(test_MCP23008)
 
 #application sources
 set(SRCS
 	${CMAKE_SOURCE_DIR}/main.cpp
+	${CMAKE_SOURCE_DIR}/i2c.c
 )
 
 option(WITH_TFT "add compilation rules for the TFT support" ON)

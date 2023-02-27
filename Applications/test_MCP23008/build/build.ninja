@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: TEST1
+# Project: test_MCP23008
 # Configurations: Debug
 # =============================================================================
 
@@ -41,145 +41,152 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/build/
 # =============================================================================
-# Object build statements for EXECUTABLE target TEST1
+# Object build statements for EXECUTABLE target test_MCP23008
 
 
 #############################################
-# Order-only phony target for TEST1
+# Order-only phony target for test_MCP23008
 
-build cmake_object_order_depends_target_TEST1: phony || CMakeFiles/TEST1.dir
+build cmake_object_order_depends_target_test_MCP23008: phony || CMakeFiles/test_MCP23008.dir
 
-build CMakeFiles/TEST1.dir/main.cpp.obj: CXX_COMPILER__TEST1_Debug C$:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/main.cpp || cmake_object_order_depends_target_TEST1
-  DEP_FILE = CMakeFiles\TEST1.dir\main.cpp.obj.d
+build CMakeFiles/test_MCP23008.dir/main.cpp.obj: CXX_COMPILER__test_MCP23008_Debug C$:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/main.cpp || cmake_object_order_depends_target_test_MCP23008
+  DEP_FILE = CMakeFiles\test_MCP23008.dir\main.cpp.obj.d
   FLAGS = -O0 -Wno-deprecated -DDEBUG -mthumb -mcpu=cortex-m4 -mfloat-abi=soft -DSTM32F303x8 -DARMCM4 -std=c++11 -fms-extensions -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics -fstrict-volatile-bitfields -ffunction-sections -Wall -Wextra -Wcast-align -Wshadow -Wlogical-op -Wsuggest-final-types -Wsuggest-final-methods -fexceptions -g
   INCLUDES = -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008 -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/arduinoCore -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-ST7735-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library/Fonts -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Device/ST/STM32F3xx/Include -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Include
-  OBJECT_DIR = CMakeFiles\TEST1.dir
-  OBJECT_FILE_DIR = CMakeFiles\TEST1.dir
+  OBJECT_DIR = CMakeFiles\test_MCP23008.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_MCP23008.dir
 
-build CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/adc.c.obj: C_COMPILER__TEST1_Debug C$:/Users/benji/LabBoard_BNJ/Applications/lib/adc.c || cmake_object_order_depends_target_TEST1
-  DEP_FILE = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\adc.c.obj.d
+build CMakeFiles/test_MCP23008.dir/i2c.c.obj: C_COMPILER__test_MCP23008_Debug C$:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/i2c.c || cmake_object_order_depends_target_test_MCP23008
+  DEP_FILE = CMakeFiles\test_MCP23008.dir\i2c.c.obj.d
   FLAGS = -O0 -Wno-deprecated -DDEBUG -mthumb -mcpu=cortex-m4 -mfloat-abi=soft -DSTM32F303x8 -DARMCM4 -std=c11 -fstrict-volatile-bitfields -ffunction-sections -Wall -Wextra -Wcast-align -Wshadow -Wlogical-op -Wsuggest-final-types -Wsuggest-final-methods -fexceptions -g
   INCLUDES = -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008 -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/arduinoCore -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-ST7735-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library/Fonts -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Device/ST/STM32F3xx/Include -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Include
-  OBJECT_DIR = CMakeFiles\TEST1.dir
-  OBJECT_FILE_DIR = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib
+  OBJECT_DIR = CMakeFiles\test_MCP23008.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_MCP23008.dir
 
-build CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/pinAccess.c.obj: C_COMPILER__TEST1_Debug C$:/Users/benji/LabBoard_BNJ/Applications/lib/pinAccess.c || cmake_object_order_depends_target_TEST1
-  DEP_FILE = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\pinAccess.c.obj.d
+build CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/adc.c.obj: C_COMPILER__test_MCP23008_Debug C$:/Users/benji/LabBoard_BNJ/Applications/lib/adc.c || cmake_object_order_depends_target_test_MCP23008
+  DEP_FILE = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\adc.c.obj.d
   FLAGS = -O0 -Wno-deprecated -DDEBUG -mthumb -mcpu=cortex-m4 -mfloat-abi=soft -DSTM32F303x8 -DARMCM4 -std=c11 -fstrict-volatile-bitfields -ffunction-sections -Wall -Wextra -Wcast-align -Wshadow -Wlogical-op -Wsuggest-final-types -Wsuggest-final-methods -fexceptions -g
   INCLUDES = -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008 -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/arduinoCore -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-ST7735-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library/Fonts -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Device/ST/STM32F3xx/Include -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Include
-  OBJECT_DIR = CMakeFiles\TEST1.dir
-  OBJECT_FILE_DIR = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib
+  OBJECT_DIR = CMakeFiles\test_MCP23008.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib
 
-build CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/spi.c.obj: C_COMPILER__TEST1_Debug C$:/Users/benji/LabBoard_BNJ/Applications/lib/spi.c || cmake_object_order_depends_target_TEST1
-  DEP_FILE = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\spi.c.obj.d
+build CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/pinAccess.c.obj: C_COMPILER__test_MCP23008_Debug C$:/Users/benji/LabBoard_BNJ/Applications/lib/pinAccess.c || cmake_object_order_depends_target_test_MCP23008
+  DEP_FILE = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\pinAccess.c.obj.d
   FLAGS = -O0 -Wno-deprecated -DDEBUG -mthumb -mcpu=cortex-m4 -mfloat-abi=soft -DSTM32F303x8 -DARMCM4 -std=c11 -fstrict-volatile-bitfields -ffunction-sections -Wall -Wextra -Wcast-align -Wshadow -Wlogical-op -Wsuggest-final-types -Wsuggest-final-methods -fexceptions -g
   INCLUDES = -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008 -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/arduinoCore -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-ST7735-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library/Fonts -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Device/ST/STM32F3xx/Include -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Include
-  OBJECT_DIR = CMakeFiles\TEST1.dir
-  OBJECT_FILE_DIR = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib
+  OBJECT_DIR = CMakeFiles\test_MCP23008.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib
 
-build CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/exti.c.obj: C_COMPILER__TEST1_Debug C$:/Users/benji/LabBoard_BNJ/Applications/lib/exti.c || cmake_object_order_depends_target_TEST1
-  DEP_FILE = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\exti.c.obj.d
+build CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/spi.c.obj: C_COMPILER__test_MCP23008_Debug C$:/Users/benji/LabBoard_BNJ/Applications/lib/spi.c || cmake_object_order_depends_target_test_MCP23008
+  DEP_FILE = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\spi.c.obj.d
   FLAGS = -O0 -Wno-deprecated -DDEBUG -mthumb -mcpu=cortex-m4 -mfloat-abi=soft -DSTM32F303x8 -DARMCM4 -std=c11 -fstrict-volatile-bitfields -ffunction-sections -Wall -Wextra -Wcast-align -Wshadow -Wlogical-op -Wsuggest-final-types -Wsuggest-final-methods -fexceptions -g
   INCLUDES = -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008 -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/arduinoCore -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-ST7735-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library/Fonts -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Device/ST/STM32F3xx/Include -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Include
-  OBJECT_DIR = CMakeFiles\TEST1.dir
-  OBJECT_FILE_DIR = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib
+  OBJECT_DIR = CMakeFiles\test_MCP23008.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib
 
-build CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/tft.cpp.obj: CXX_COMPILER__TEST1_Debug C$:/Users/benji/LabBoard_BNJ/Applications/lib/tft/tft.cpp || cmake_object_order_depends_target_TEST1
-  DEP_FILE = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft\tft.cpp.obj.d
-  FLAGS = -O0 -Wno-deprecated -DDEBUG -mthumb -mcpu=cortex-m4 -mfloat-abi=soft -DSTM32F303x8 -DARMCM4 -std=c++11 -fms-extensions -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics -fstrict-volatile-bitfields -ffunction-sections -Wall -Wextra -Wcast-align -Wshadow -Wlogical-op -Wsuggest-final-types -Wsuggest-final-methods -fexceptions -g
-  INCLUDES = -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008 -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/arduinoCore -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-ST7735-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library/Fonts -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Device/ST/STM32F3xx/Include -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Include
-  OBJECT_DIR = CMakeFiles\TEST1.dir
-  OBJECT_FILE_DIR = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft
-
-build CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/arduinoCore/Print.cpp.obj: CXX_COMPILER__TEST1_Debug C$:/Users/benji/LabBoard_BNJ/Applications/lib/tft/arduinoCore/Print.cpp || cmake_object_order_depends_target_TEST1
-  DEP_FILE = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft\arduinoCore\Print.cpp.obj.d
-  FLAGS = -O0 -Wno-deprecated -DDEBUG -mthumb -mcpu=cortex-m4 -mfloat-abi=soft -DSTM32F303x8 -DARMCM4 -std=c++11 -fms-extensions -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics -fstrict-volatile-bitfields -ffunction-sections -Wall -Wextra -Wcast-align -Wshadow -Wlogical-op -Wsuggest-final-types -Wsuggest-final-methods -fexceptions -g
-  INCLUDES = -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008 -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/arduinoCore -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-ST7735-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library/Fonts -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Device/ST/STM32F3xx/Include -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Include
-  OBJECT_DIR = CMakeFiles\TEST1.dir
-  OBJECT_FILE_DIR = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft\arduinoCore
-
-build CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-GFX-Library/Adafruit_GFX.cpp.obj: CXX_COMPILER__TEST1_Debug C$:/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-GFX-Library/Adafruit_GFX.cpp || cmake_object_order_depends_target_TEST1
-  DEP_FILE = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft\Adafruit-GFX-Library\Adafruit_GFX.cpp.obj.d
-  FLAGS = -O0 -Wno-deprecated -DDEBUG -mthumb -mcpu=cortex-m4 -mfloat-abi=soft -DSTM32F303x8 -DARMCM4 -std=c++11 -fms-extensions -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics -fstrict-volatile-bitfields -ffunction-sections -Wall -Wextra -Wcast-align -Wshadow -Wlogical-op -Wsuggest-final-types -Wsuggest-final-methods -fexceptions -g
-  INCLUDES = -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008 -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/arduinoCore -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-ST7735-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library/Fonts -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Device/ST/STM32F3xx/Include -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Include
-  OBJECT_DIR = CMakeFiles\TEST1.dir
-  OBJECT_FILE_DIR = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft\Adafruit-GFX-Library
-
-build CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-GFX-Library/Adafruit_SPITFT.cpp.obj: CXX_COMPILER__TEST1_Debug C$:/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-GFX-Library/Adafruit_SPITFT.cpp || cmake_object_order_depends_target_TEST1
-  DEP_FILE = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft\Adafruit-GFX-Library\Adafruit_SPITFT.cpp.obj.d
-  FLAGS = -O0 -Wno-deprecated -DDEBUG -mthumb -mcpu=cortex-m4 -mfloat-abi=soft -DSTM32F303x8 -DARMCM4 -std=c++11 -fms-extensions -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics -fstrict-volatile-bitfields -ffunction-sections -Wall -Wextra -Wcast-align -Wshadow -Wlogical-op -Wsuggest-final-types -Wsuggest-final-methods -fexceptions -g
-  INCLUDES = -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008 -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/arduinoCore -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-ST7735-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library/Fonts -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Device/ST/STM32F3xx/Include -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Include
-  OBJECT_DIR = CMakeFiles\TEST1.dir
-  OBJECT_FILE_DIR = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft\Adafruit-GFX-Library
-
-build CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-ST7735-Library/Adafruit_ST7735.cpp.obj: CXX_COMPILER__TEST1_Debug C$:/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-ST7735-Library/Adafruit_ST7735.cpp || cmake_object_order_depends_target_TEST1
-  DEP_FILE = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft\Adafruit-ST7735-Library\Adafruit_ST7735.cpp.obj.d
-  FLAGS = -O0 -Wno-deprecated -DDEBUG -mthumb -mcpu=cortex-m4 -mfloat-abi=soft -DSTM32F303x8 -DARMCM4 -std=c++11 -fms-extensions -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics -fstrict-volatile-bitfields -ffunction-sections -Wall -Wextra -Wcast-align -Wshadow -Wlogical-op -Wsuggest-final-types -Wsuggest-final-methods -fexceptions -g
-  INCLUDES = -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008 -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/arduinoCore -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-ST7735-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library/Fonts -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Device/ST/STM32F3xx/Include -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Include
-  OBJECT_DIR = CMakeFiles\TEST1.dir
-  OBJECT_FILE_DIR = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft\Adafruit-ST7735-Library
-
-build CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-ST7735-Library/Adafruit_ST77xx.cpp.obj: CXX_COMPILER__TEST1_Debug C$:/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-ST7735-Library/Adafruit_ST77xx.cpp || cmake_object_order_depends_target_TEST1
-  DEP_FILE = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft\Adafruit-ST7735-Library\Adafruit_ST77xx.cpp.obj.d
-  FLAGS = -O0 -Wno-deprecated -DDEBUG -mthumb -mcpu=cortex-m4 -mfloat-abi=soft -DSTM32F303x8 -DARMCM4 -std=c++11 -fms-extensions -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics -fstrict-volatile-bitfields -ffunction-sections -Wall -Wextra -Wcast-align -Wshadow -Wlogical-op -Wsuggest-final-types -Wsuggest-final-methods -fexceptions -g
-  INCLUDES = -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008 -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/arduinoCore -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-ST7735-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library/Fonts -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Device/ST/STM32F3xx/Include -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Include
-  OBJECT_DIR = CMakeFiles\TEST1.dir
-  OBJECT_FILE_DIR = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft\Adafruit-ST7735-Library
-
-build CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/sys/startup_ARMCM4.c.obj: C_COMPILER__TEST1_Debug C$:/Users/benji/LabBoard_BNJ/Applications/sys/startup_ARMCM4.c || cmake_object_order_depends_target_TEST1
-  DEP_FILE = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\sys\startup_ARMCM4.c.obj.d
+build CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/exti.c.obj: C_COMPILER__test_MCP23008_Debug C$:/Users/benji/LabBoard_BNJ/Applications/lib/exti.c || cmake_object_order_depends_target_test_MCP23008
+  DEP_FILE = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\exti.c.obj.d
   FLAGS = -O0 -Wno-deprecated -DDEBUG -mthumb -mcpu=cortex-m4 -mfloat-abi=soft -DSTM32F303x8 -DARMCM4 -std=c11 -fstrict-volatile-bitfields -ffunction-sections -Wall -Wextra -Wcast-align -Wshadow -Wlogical-op -Wsuggest-final-types -Wsuggest-final-methods -fexceptions -g
   INCLUDES = -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008 -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/arduinoCore -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-ST7735-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library/Fonts -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Device/ST/STM32F3xx/Include -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Include
-  OBJECT_DIR = CMakeFiles\TEST1.dir
-  OBJECT_FILE_DIR = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\sys
+  OBJECT_DIR = CMakeFiles\test_MCP23008.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib
 
-build CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/sys/startup_clock.c.obj: C_COMPILER__TEST1_Debug C$:/Users/benji/LabBoard_BNJ/Applications/sys/startup_clock.c || cmake_object_order_depends_target_TEST1
-  DEP_FILE = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\sys\startup_clock.c.obj.d
+build CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/tft.cpp.obj: CXX_COMPILER__test_MCP23008_Debug C$:/Users/benji/LabBoard_BNJ/Applications/lib/tft/tft.cpp || cmake_object_order_depends_target_test_MCP23008
+  DEP_FILE = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft\tft.cpp.obj.d
+  FLAGS = -O0 -Wno-deprecated -DDEBUG -mthumb -mcpu=cortex-m4 -mfloat-abi=soft -DSTM32F303x8 -DARMCM4 -std=c++11 -fms-extensions -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics -fstrict-volatile-bitfields -ffunction-sections -Wall -Wextra -Wcast-align -Wshadow -Wlogical-op -Wsuggest-final-types -Wsuggest-final-methods -fexceptions -g
+  INCLUDES = -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008 -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/arduinoCore -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-ST7735-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library/Fonts -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Device/ST/STM32F3xx/Include -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\test_MCP23008.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft
+
+build CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/arduinoCore/Print.cpp.obj: CXX_COMPILER__test_MCP23008_Debug C$:/Users/benji/LabBoard_BNJ/Applications/lib/tft/arduinoCore/Print.cpp || cmake_object_order_depends_target_test_MCP23008
+  DEP_FILE = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft\arduinoCore\Print.cpp.obj.d
+  FLAGS = -O0 -Wno-deprecated -DDEBUG -mthumb -mcpu=cortex-m4 -mfloat-abi=soft -DSTM32F303x8 -DARMCM4 -std=c++11 -fms-extensions -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics -fstrict-volatile-bitfields -ffunction-sections -Wall -Wextra -Wcast-align -Wshadow -Wlogical-op -Wsuggest-final-types -Wsuggest-final-methods -fexceptions -g
+  INCLUDES = -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008 -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/arduinoCore -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-ST7735-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library/Fonts -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Device/ST/STM32F3xx/Include -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\test_MCP23008.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft\arduinoCore
+
+build CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-GFX-Library/Adafruit_GFX.cpp.obj: CXX_COMPILER__test_MCP23008_Debug C$:/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-GFX-Library/Adafruit_GFX.cpp || cmake_object_order_depends_target_test_MCP23008
+  DEP_FILE = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft\Adafruit-GFX-Library\Adafruit_GFX.cpp.obj.d
+  FLAGS = -O0 -Wno-deprecated -DDEBUG -mthumb -mcpu=cortex-m4 -mfloat-abi=soft -DSTM32F303x8 -DARMCM4 -std=c++11 -fms-extensions -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics -fstrict-volatile-bitfields -ffunction-sections -Wall -Wextra -Wcast-align -Wshadow -Wlogical-op -Wsuggest-final-types -Wsuggest-final-methods -fexceptions -g
+  INCLUDES = -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008 -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/arduinoCore -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-ST7735-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library/Fonts -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Device/ST/STM32F3xx/Include -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\test_MCP23008.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft\Adafruit-GFX-Library
+
+build CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-GFX-Library/Adafruit_SPITFT.cpp.obj: CXX_COMPILER__test_MCP23008_Debug C$:/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-GFX-Library/Adafruit_SPITFT.cpp || cmake_object_order_depends_target_test_MCP23008
+  DEP_FILE = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft\Adafruit-GFX-Library\Adafruit_SPITFT.cpp.obj.d
+  FLAGS = -O0 -Wno-deprecated -DDEBUG -mthumb -mcpu=cortex-m4 -mfloat-abi=soft -DSTM32F303x8 -DARMCM4 -std=c++11 -fms-extensions -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics -fstrict-volatile-bitfields -ffunction-sections -Wall -Wextra -Wcast-align -Wshadow -Wlogical-op -Wsuggest-final-types -Wsuggest-final-methods -fexceptions -g
+  INCLUDES = -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008 -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/arduinoCore -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-ST7735-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library/Fonts -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Device/ST/STM32F3xx/Include -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\test_MCP23008.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft\Adafruit-GFX-Library
+
+build CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-ST7735-Library/Adafruit_ST7735.cpp.obj: CXX_COMPILER__test_MCP23008_Debug C$:/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-ST7735-Library/Adafruit_ST7735.cpp || cmake_object_order_depends_target_test_MCP23008
+  DEP_FILE = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft\Adafruit-ST7735-Library\Adafruit_ST7735.cpp.obj.d
+  FLAGS = -O0 -Wno-deprecated -DDEBUG -mthumb -mcpu=cortex-m4 -mfloat-abi=soft -DSTM32F303x8 -DARMCM4 -std=c++11 -fms-extensions -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics -fstrict-volatile-bitfields -ffunction-sections -Wall -Wextra -Wcast-align -Wshadow -Wlogical-op -Wsuggest-final-types -Wsuggest-final-methods -fexceptions -g
+  INCLUDES = -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008 -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/arduinoCore -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-ST7735-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library/Fonts -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Device/ST/STM32F3xx/Include -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\test_MCP23008.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft\Adafruit-ST7735-Library
+
+build CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-ST7735-Library/Adafruit_ST77xx.cpp.obj: CXX_COMPILER__test_MCP23008_Debug C$:/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-ST7735-Library/Adafruit_ST77xx.cpp || cmake_object_order_depends_target_test_MCP23008
+  DEP_FILE = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft\Adafruit-ST7735-Library\Adafruit_ST77xx.cpp.obj.d
+  FLAGS = -O0 -Wno-deprecated -DDEBUG -mthumb -mcpu=cortex-m4 -mfloat-abi=soft -DSTM32F303x8 -DARMCM4 -std=c++11 -fms-extensions -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics -fstrict-volatile-bitfields -ffunction-sections -Wall -Wextra -Wcast-align -Wshadow -Wlogical-op -Wsuggest-final-types -Wsuggest-final-methods -fexceptions -g
+  INCLUDES = -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008 -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/arduinoCore -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-ST7735-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library/Fonts -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Device/ST/STM32F3xx/Include -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\test_MCP23008.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\lib\tft\Adafruit-ST7735-Library
+
+build CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/sys/startup_ARMCM4.c.obj: C_COMPILER__test_MCP23008_Debug C$:/Users/benji/LabBoard_BNJ/Applications/sys/startup_ARMCM4.c || cmake_object_order_depends_target_test_MCP23008
+  DEP_FILE = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\sys\startup_ARMCM4.c.obj.d
   FLAGS = -O0 -Wno-deprecated -DDEBUG -mthumb -mcpu=cortex-m4 -mfloat-abi=soft -DSTM32F303x8 -DARMCM4 -std=c11 -fstrict-volatile-bitfields -ffunction-sections -Wall -Wextra -Wcast-align -Wshadow -Wlogical-op -Wsuggest-final-types -Wsuggest-final-methods -fexceptions -g
   INCLUDES = -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008 -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/arduinoCore -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-ST7735-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library/Fonts -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Device/ST/STM32F3xx/Include -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Include
-  OBJECT_DIR = CMakeFiles\TEST1.dir
-  OBJECT_FILE_DIR = CMakeFiles\TEST1.dir\C_\Users\benji\LabBoard_BNJ\Applications\sys
+  OBJECT_DIR = CMakeFiles\test_MCP23008.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\sys
+
+build CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/sys/startup_clock.c.obj: C_COMPILER__test_MCP23008_Debug C$:/Users/benji/LabBoard_BNJ/Applications/sys/startup_clock.c || cmake_object_order_depends_target_test_MCP23008
+  DEP_FILE = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\sys\startup_clock.c.obj.d
+  FLAGS = -O0 -Wno-deprecated -DDEBUG -mthumb -mcpu=cortex-m4 -mfloat-abi=soft -DSTM32F303x8 -DARMCM4 -std=c11 -fstrict-volatile-bitfields -ffunction-sections -Wall -Wextra -Wcast-align -Wshadow -Wlogical-op -Wsuggest-final-types -Wsuggest-final-methods -fexceptions -g
+  INCLUDES = -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008 -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/arduinoCore -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-ST7735-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../lib/tft/Adafruit-GFX-Library/Fonts -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Device/ST/STM32F3xx/Include -IC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\test_MCP23008.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_MCP23008.dir\C_\Users\benji\LabBoard_BNJ\Applications\sys
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target TEST1
+# Link build statements for EXECUTABLE target test_MCP23008
 
 
 #############################################
-# Link the executable TEST1
+# Link the executable test_MCP23008
 
-build TEST1: CXX_EXECUTABLE_LINKER__TEST1_Debug CMakeFiles/TEST1.dir/main.cpp.obj CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/adc.c.obj CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/pinAccess.c.obj CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/spi.c.obj CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/exti.c.obj CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/tft.cpp.obj CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/arduinoCore/Print.cpp.obj CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-GFX-Library/Adafruit_GFX.cpp.obj CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-GFX-Library/Adafruit_SPITFT.cpp.obj CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-ST7735-Library/Adafruit_ST7735.cpp.obj CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-ST7735-Library/Adafruit_ST77xx.cpp.obj CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/sys/startup_ARMCM4.c.obj CMakeFiles/TEST1.dir/C_/Users/benji/LabBoard_BNJ/Applications/sys/startup_clock.c.obj | C$:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/stm32f303K8.ld
+build test_MCP23008: CXX_EXECUTABLE_LINKER__test_MCP23008_Debug CMakeFiles/test_MCP23008.dir/main.cpp.obj CMakeFiles/test_MCP23008.dir/i2c.c.obj CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/adc.c.obj CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/pinAccess.c.obj CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/spi.c.obj CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/exti.c.obj CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/tft.cpp.obj CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/arduinoCore/Print.cpp.obj CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-GFX-Library/Adafruit_GFX.cpp.obj CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-GFX-Library/Adafruit_SPITFT.cpp.obj CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-ST7735-Library/Adafruit_ST7735.cpp.obj CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/lib/tft/Adafruit-ST7735-Library/Adafruit_ST77xx.cpp.obj CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/sys/startup_ARMCM4.c.obj CMakeFiles/test_MCP23008.dir/C_/Users/benji/LabBoard_BNJ/Applications/sys/startup_clock.c.obj | C$:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/stm32f303K8.ld
   FLAGS = -O0 -Wno-deprecated -DDEBUG
-  LINK_LIBRARIES = -mthumb  -mcpu=cortex-m4  -mfloat-abi=soft  -DSTM32F303x8  -DARMCM4  -TC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/stm32f303K8.ld  -Wl,--start-group  -lm  -Wl,--end-group  -Wl,--gc-sections  -Lsys  -lstdc++_nano  -Xlinker  -Map=TEST1.map  -lm
-  OBJECT_DIR = CMakeFiles\TEST1.dir
+  LINK_LIBRARIES = -mthumb  -mcpu=cortex-m4  -mfloat-abi=soft  -DSTM32F303x8  -DARMCM4  -TC:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/../sys/stm32f303K8.ld  -Wl,--start-group  -lm  -Wl,--end-group  -Wl,--gc-sections  -Lsys  -lstdc++_nano  -Xlinker  -Map=test_MCP23008.map  -lm
+  OBJECT_DIR = CMakeFiles\test_MCP23008.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = TEST1
-  TARGET_PDB = TEST1.dbg
+  TARGET_FILE = test_MCP23008
+  TARGET_PDB = test_MCP23008.dbg
 
 
 #############################################
 # Utility command for bin
 
-build bin: phony CMakeFiles/bin TEST1.bin TEST1
+build bin: phony CMakeFiles/bin test_MCP23008.bin test_MCP23008
 
 
 #############################################
 # Utility command for flash
 
-build flash: phony CMakeFiles/flash TEST1.bin TEST1
+build flash: phony CMakeFiles/flash test_MCP23008.bin test_MCP23008
 
 
 #############################################
 # Utility command for qemu-run
 
-build qemu-run: phony CMakeFiles/qemu-run TEST1.bin TEST1
+build qemu-run: phony CMakeFiles/qemu-run test_MCP23008.bin test_MCP23008
 
 
 #############################################
 # Utility command for qemu-gdb
 
-build qemu-gdb: phony CMakeFiles/qemu-gdb TEST1.bin TEST1
+build qemu-gdb: phony CMakeFiles/qemu-gdb test_MCP23008.bin test_MCP23008
 
 
 #############################################
@@ -209,37 +216,37 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Phony custom command for CMakeFiles\bin
 
-build CMakeFiles/bin | ${cmake_ninja_workdir}CMakeFiles/bin: phony TEST1.bin || TEST1
+build CMakeFiles/bin | ${cmake_ninja_workdir}CMakeFiles/bin: phony test_MCP23008.bin || test_MCP23008
 
 
 #############################################
-# Custom command for TEST1.bin
+# Custom command for test_MCP23008.bin
 
-build TEST1.bin | ${cmake_ninja_workdir}TEST1.bin: CUSTOM_COMMAND TEST1 || TEST1
-  COMMAND = cmd.exe /C "cd /D C:\Users\benji\LabBoard_BNJ\Applications\test_MCP23008\build && "C:\Program Files (x86)\Arm GNU Toolchain arm-none-eabi\12.2 mpacbti-bet1\bin\arm-none-eabi-objcopy.exe" -Obinary TEST1 TEST1.bin"
-  DESC = Generating TEST1.bin
+build test_MCP23008.bin | ${cmake_ninja_workdir}test_MCP23008.bin: CUSTOM_COMMAND test_MCP23008 || test_MCP23008
+  COMMAND = cmd.exe /C "cd /D C:\Users\benji\LabBoard_BNJ\Applications\test_MCP23008\build && "C:\Program Files (x86)\Arm GNU Toolchain arm-none-eabi\12.2 mpacbti-bet1\bin\arm-none-eabi-objcopy.exe" -Obinary test_MCP23008 test_MCP23008.bin"
+  DESC = Generating test_MCP23008.bin
   restat = 1
 
 
 #############################################
 # Custom command for CMakeFiles\flash
 
-build CMakeFiles/flash | ${cmake_ninja_workdir}CMakeFiles/flash: CUSTOM_COMMAND TEST1.bin || TEST1
-  COMMAND = cmd.exe /C "cd /D C:\Users\benji\LabBoard_BNJ\Applications\test_MCP23008\build && st-flash --reset write TEST1.bin 0x8000000"
+build CMakeFiles/flash | ${cmake_ninja_workdir}CMakeFiles/flash: CUSTOM_COMMAND test_MCP23008.bin || test_MCP23008
+  COMMAND = cmd.exe /C "cd /D C:\Users\benji\LabBoard_BNJ\Applications\test_MCP23008\build && st-flash --reset write test_MCP23008.bin 0x8000000"
 
 
 #############################################
 # Custom command for CMakeFiles\qemu-run
 
-build CMakeFiles/qemu-run | ${cmake_ninja_workdir}CMakeFiles/qemu-run: CUSTOM_COMMAND TEST1.bin || TEST1
-  COMMAND = cmd.exe /C "cd /D C:\Users\benji\LabBoard_BNJ\Applications\test_MCP23008\build && qemu-system-arm -M nucleo32_f303 -kernel TEST1.bin -nographic"
+build CMakeFiles/qemu-run | ${cmake_ninja_workdir}CMakeFiles/qemu-run: CUSTOM_COMMAND test_MCP23008.bin || test_MCP23008
+  COMMAND = cmd.exe /C "cd /D C:\Users\benji\LabBoard_BNJ\Applications\test_MCP23008\build && qemu-system-arm -M nucleo32_f303 -kernel test_MCP23008.bin -nographic"
 
 
 #############################################
 # Custom command for CMakeFiles\qemu-gdb
 
-build CMakeFiles/qemu-gdb | ${cmake_ninja_workdir}CMakeFiles/qemu-gdb: CUSTOM_COMMAND TEST1.bin || TEST1
-  COMMAND = cmd.exe /C "cd /D C:\Users\benji\LabBoard_BNJ\Applications\test_MCP23008\build && qemu-system-arm -M nucleo32_f303 -kernel TEST1.bin -nographic -S -gdb tcp::4242"
+build CMakeFiles/qemu-gdb | ${cmake_ninja_workdir}CMakeFiles/qemu-gdb: CUSTOM_COMMAND test_MCP23008.bin || test_MCP23008
+  COMMAND = cmd.exe /C "cd /D C:\Users\benji\LabBoard_BNJ\Applications\test_MCP23008\build && qemu-system-arm -M nucleo32_f303 -kernel test_MCP23008.bin -nographic -S -gdb tcp::4242"
 
 # =============================================================================
 # Target aliases.
@@ -252,7 +259,7 @@ build CMakeFiles/qemu-gdb | ${cmake_ninja_workdir}CMakeFiles/qemu-gdb: CUSTOM_CO
 #############################################
 # Folder: C:/Users/benji/LabBoard_BNJ/Applications/test_MCP23008/build
 
-build all: phony TEST1
+build all: phony test_MCP23008
 
 # =============================================================================
 # Built-in targets
