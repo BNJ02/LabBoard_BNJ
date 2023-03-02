@@ -1,0 +1,7 @@
+C:/Users/benji/LabBoard_BNJ/Applications/test2_MCP23008/build/CMakeFiles/test_MCP23008.dir
+C:/Users/benji/LabBoard_BNJ/Applications/test2_MCP23008/build/CMakeFiles/bin.dir
+C:/Users/benji/LabBoard_BNJ/Applications/test2_MCP23008/build/CMakeFiles/flash.dir
+C:/Users/benji/LabBoard_BNJ/Applications/test2_MCP23008/build/CMakeFiles/qemu-run.dir
+C:/Users/benji/LabBoard_BNJ/Applications/test2_MCP23008/build/CMakeFiles/qemu-gdb.dir
+C:/Users/benji/LabBoard_BNJ/Applications/test2_MCP23008/build/CMakeFiles/edit_cache.dir
+C:/Users/benji/LabBoard_BNJ/Applications/test2_MCP23008/build/CMakeFiles/rebuild_cache.dir
